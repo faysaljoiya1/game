@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Box Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="faisal">
+        <p>made by faisal</p>
+    </div>
+    <div class="container">
+        <div id="game-board">
+            <div class="box" onclick="handleClick(this, 0)"></div>
+            <div class="box" onclick="handleClick(this, 1)"></div>
+            <div class="box" onclick="handleClick(this, 2)"></div>
+            <div class="box" onclick="handleClick(this, 3)"></div>
+            <div class="box" onclick="handleClick(this, 4)"></div>
+            <div class="box" onclick="handleClick(this, 5)"></div>
+            <div class="box" onclick="handleClick(this, 6)"></div>
+            <div class="box" onclick="handleClick(this, 7)"></div>
+            <div class="box" onclick="handleClick(this, 8)"></div>
+        </div>
+        <div id="score">Rs: 0</div>
+        <div id="message"></div>
+        <div id="retry-container"></div>
+        <div class="comments">
+            <p>Click on the boxes and try your luck. Green boxes add points, but beware of the red one!</p>
+            <p>Score resets to zero if you hit the red box. Keep trying for a high score!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

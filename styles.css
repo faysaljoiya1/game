@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #008b8b;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #008b8b;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+#score.animate {
+    transform: scale(1.2);
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.comments {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #555;
+}
+#retry-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #008b8b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#retry-button:hover {
+    background-color: #006666;
+}
